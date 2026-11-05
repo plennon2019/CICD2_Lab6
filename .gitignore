@@ -7,3 +7,4 @@ venv/
 htmlcov/ 
 app.db 
 *.db
+*.pyc*
