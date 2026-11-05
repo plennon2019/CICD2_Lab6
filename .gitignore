@@ -8,3 +8,5 @@ htmlcov/
 app.db 
 *.db
 *.pyc*
+*.cpython*
+
