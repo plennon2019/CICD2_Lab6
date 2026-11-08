@@ -1,4 +1,4 @@
-# Lab 5 – Two FastAPI Microservices with HTTPX 
+# Lab 6 – Containerising FastAPI Microservices with Docker Compose and GHCR
 
 ## Running the services
 
@@ -18,3 +18,11 @@ To try it, open port 8000 from the Codespaces Ports tab, add `/docs` to the URL 
 
 ## PRODUCT_SERVICE_URL
 `PRODUCT_SERVICE_URL` is an environment variable that tells the User API where to find the Product Service. It defaults to `http://127.0.0.1:8001` in Codespaces and can be changed without editing the code.
+
+
+## Running Docker Compose
+docker compose config
+docker compose up --build -d
+docker compose ps
+curl -i http://127.0.0.1:8001/products/1
+curl -i http://127.0.0.1:8000/api/products/1
