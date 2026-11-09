@@ -5,10 +5,10 @@ services:
       dockerfile: Dockerfile.user
     ports:
       - "8000:8000"
-    environment:
-      - DATABASE_URL=sqlite:///./app.db
-    volumes:
+    environment: 
+      DATABASE_URL: "sqlite:////data/app.db"
+    volumes: 
       - user_data:/data
-
-volumes:
+ 
+volumes: 
   user_data:
